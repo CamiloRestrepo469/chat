@@ -1,0 +1,123 @@
+:root {
+    /* Paleta de colores pasteles */
+    --rosa-palido: #FFD3E0;
+    --azul-lavanda: #C7CEEA;
+    --amarillo-cremoso: #FCECBF;
+    --verde-menta-suave: #B5EAD7;
+    --melocoton-claro: #FFDAC1;
+  
+    /* Colores suaves de tonos terrosos */
+    --marron-suave: #D4A373;
+    --verde-musgo-claro: #A8C686;
+    --amarillo-mostaza-claro: #D9BF77;
+    --gris-verdoso: #B8B8A6;
+    --beige-suave: #E2C4A6;
+  
+    /* Paleta de colores pastel fríos */
+    --azul-claro: #9AD1D4;
+    --azul-cielo: #C4E0E5;
+    --gris-azulado: #B7BCC7;
+    --verde-agua: #C6D8D3;
+    --verde-claro: #E4EFC2;
+
+    --BLACK: #000;
+    --rgbb: rgb(175,175,175);
+  }
+  
+
+.formContainer{
+    background-color: var(--verde-menta-suave);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .formWrapper{
+        height: auto;
+        width: 15%;
+        background-color: whitesmoke;
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        border-radius: 10px;
+
+        .logo{
+            color: var(--BLACK);
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .title{
+            color: var(--verde-musgo-claro);
+            font-size: 12px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input {
+                padding: 15px;
+                border: none;
+                border-radius: 15px;
+                border-bottom: 1px solid var(--azul-claro);
+
+                &::placeholder{
+                    color: var(--rgbb);
+                }
+            }
+            button{
+                background-color: var(--azul-lavanda);
+                color: var(--rgbb);
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                border-radius: 12px;
+                &:hover{
+                    background-color: var(--azul-claro);
+                }
+            }
+            label{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: var(--gris-azulado);
+                cursor: pointer;
+                font-size: 12px;
+
+                .MuiSvgIcon-root {
+                    font-size: 30px;
+                    color: var(--verde-menta-suave);
+                    margin: 10px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        p{
+            color: var(--gris-azulado);
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+    }
+}
+
+.home{
+    background-color: var(--verde-menta-suave);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        border: 1px solid var(--azul-lavanda);
+        border-radius: 10px;
+        width: 65%;
+        height: 80%;
+    }
+}
